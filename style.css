@@ -897,17 +897,15 @@ footer nav a:hover { color: #fff; }
   box-sizing: border-box;
 }
 
-/* --- Responsive --- */
+/* --- Ad units responsive (tablet) --- */
 @media (max-width: 900px) {
   .ad-sponsor-billboard-inner {
     grid-template-columns: 1fr;
     text-align: center;
   }
   .ad-sponsor-logo-box { margin: 0 auto; }
-  .article-page-grid {
-    grid-template-columns: 1fr;
-  }
   .ad-rail-box, .ad-rail-sponsor { width: 100%; }
+  /* article layout stays 2-col until mobile breakpoint */
 }
 
 /* ═══════════════════════════════════════════════
@@ -1242,4 +1240,27 @@ footer nav a:hover { color: #fff; }
   .footer-logo { font-size: 38px; }
   footer nav a { margin: 0 8px; font-size: 11px; }
   .back-top { bottom: 14px; right: 14px; width: 36px; height: 36px; font-size: 15px; }
+
+  /* ── People page ── */
+  .people-grid { grid-template-columns: repeat(2, 1fr) !important; }
+  .people-hero h1 { font-size: 44px; }
+  .people-hero p { font-size: 14px; }
+  .person-img { height: 180px; }
+
+  /* ── Donate page ── */
+  .donate-page-wrap { padding: 0 14px; margin: 28px auto; }
+  .donate-page-wrap h1 { font-size: 36px; }
+  .donate-page-wrap .donate-deck { font-size: 15px; }
+  .donate-strip-amounts { gap: 8px; }
+  .donate-amount-chip { padding: 6px 14px; font-size: 12px; }
+
+  /* ── World grid sidebar (people page / article sidebars) ── */
+  .world-grid { grid-template-columns: 1fr !important; }
+  .world-articles { border-right: none !important; padding: 0 14px !important; }
+  .world-article { grid-template-columns: 1fr !important; }
+  .world-article img { width: 100% !important; height: 180px !important; }
+  .most-read { padding: 0 14px !important; border-top: 2px solid #000; margin-top: 16px; }
+
+  /* ── Section wraps that escaped the ID rule ── */
+  .section-wrap { display: none !important; }
 }
