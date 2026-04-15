@@ -956,7 +956,7 @@
 <footer>
   <div class="footer-logo">THE IMMUTABLE LEDGER</div>
   <div class="footer-tagline">Subject to change</div>
-  <nav>
+  <nav class="footer-nav-desktop">
     <a href="#payments">Payments</a>
     <a href="#technology">Technology</a>
     <a href="#regulation">Regulation</a>
@@ -966,11 +966,28 @@
     <a href="#global">Global</a>
     <a href="people.html">Our Team</a>
   </nav>
+  <nav class="footer-nav-mobile">
+    <a href="index.html">Home</a>
+    <a href="people.html">Our Team</a>
+    <a href="donate.html">Support Us</a>
+  </nav>
   <p class="footer-disclaimer">The Fintech &amp; Payments Ledger is a satirical publication. All articles are fictional. Any resemblance to actual events, institutions, or persons — living, in a lengthy transformation programme, or recently removed from a steering committee — is coincidental or, frankly, inevitable given the sector's predictability.</p>
   <p class="footer-copy">&copy; 2026 The Fintech &amp; Payments Ledger. All rights reserved. Some rights are pending regulatory approval.</p>
 </footer>
 
 <button class="back-top" onclick="window.scrollTo({top:0,behavior:'smooth'})">&#8679;</button>
+
+<script>
+// On mobile: section anchor links (#payments etc) go nowhere useful — scroll to top instead
+if (window.innerWidth <= 600) {
+  document.querySelectorAll('a[href^="#"]').forEach(function(a) {
+    a.addEventListener('click', function(e) {
+      e.preventDefault();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  });
+}
+</script>
 
 </body>
 </html>

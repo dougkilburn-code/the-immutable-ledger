@@ -543,6 +543,7 @@ footer {
 footer nav { margin-bottom: 28px; }
 footer nav a { color: #aaa; font-size: 12px; margin: 0 14px; letter-spacing: 1px; text-transform: uppercase; }
 footer nav a:hover { color: #fff; }
+.footer-nav-mobile { display: none; }
 .footer-disclaimer { font-size: 12px; color: #555; max-width: 720px; margin: 0 auto 14px; line-height: 1.7; }
 .footer-copy { font-size: 12px; color: #444; }
 
@@ -1078,7 +1079,7 @@ footer nav a:hover { color: #fff; }
    Mobile gets a stripped-back feed — no grids,
    no billboards, no banners.
    ═══════════════════════════════════════════════ */
-@media (max-width: 720px) {
+@media (max-width: 600px) {
 
   /* ── Kill the ticker — wraps badly, no space ── */
   .breaking-bar { display: none !important; }
@@ -1263,4 +1264,8 @@ footer nav a:hover { color: #fff; }
 
   /* ── Section wraps that escaped the ID rule ── */
   .section-wrap { display: none !important; }
+
+  /* ── Footer nav: hide desktop section links, show simple mobile nav ── */
+  .footer-nav-desktop { display: none; }
+  .footer-nav-mobile { display: block; }
 }
