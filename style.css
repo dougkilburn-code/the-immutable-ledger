@@ -1068,24 +1068,25 @@ footer nav a:hover { color: #fff; }
 }
 
 
+
 /* ═══════════════════════════════════════════════
-   MOBILE FEED — desktop: hidden
+   MOBILE FEED — hidden on desktop
    ═══════════════════════════════════════════════ */
 #mobile-feed { display: none; }
 
 /* ═══════════════════════════════════════════════
-   RESPONSIVE — MOBILE (≤ 720px)
-   Desktop layout is untouched above this point.
-   On mobile we hide all complex desktop panels
-   and show a simple article feed instead.
+   RESPONSIVE — MOBILE ONLY (≤ 720px)
+   Desktop layout untouched above this line.
+   Mobile gets a stripped-back feed — no grids,
+   no billboards, no banners.
    ═══════════════════════════════════════════════ */
 @media (max-width: 720px) {
 
-  /* ── Show mobile feed, hide desktop layout ── */
-  #mobile-feed { display: block; }
+  /* ── Kill the ticker — wraps badly, no space ── */
+  .breaking-bar { display: none !important; }
 
+  /* ── Hide all desktop-only layout sections ── */
   .home-grid,
-  .section-wrap,
   .ad-leaderboard-wrap,
   .ad-sponsor-billboard,
   .featured-2col,
@@ -1093,38 +1094,41 @@ footer nav a:hover { color: #fff; }
   .world-grid,
   .donate-strip,
   .ad-prefooter,
-  .section-rule {
-    display: none !important;
-  }
+  .section-rule,
+  #payments,
+  #technology,
+  #agentic,
+  #crypto,
+  #regulation,
+  #consumer,
+  #people,
+  #conferences,
+  #global { display: none !important; }
 
-  /* Also hide the section id anchor divs that wrap card grids */
-  #payments, #technology, #agentic, #crypto,
-  #regulation, #consumer, #people, #conferences, #global {
-    display: none !important;
-  }
+  /* ── Show mobile feed ── */
+  #mobile-feed { display: block; }
 
   /* ── Top bar ── */
-  .top-bar { padding: 7px 14px; }
+  .top-bar { padding: 6px 14px; }
   .top-bar-date { display: none; }
-  .top-bar-icons { font-size: 16px; gap: 10px; }
-  .subscribe-btn { padding: 4px 10px; font-size: 10px; letter-spacing: 1px; }
+  .subscribe-btn { padding: 4px 10px; font-size: 10px; letter-spacing: 0.5px; }
   .donate-btn { padding: 4px 10px; font-size: 10px; margin-left: 4px; }
 
-  /* ── Breaking ticker ── */
-  .breaking-bar { padding: 7px 0; font-size: 11px; }
-  .breaking-label { padding: 0 12px; font-size: 10px; }
-
-  /* ── Masthead ── */
-  .masthead { padding: 12px 14px 8px; }
-  .masthead-logo a { font-size: 48px; letter-spacing: 1px; }
-  .masthead-logo .tagline { font-size: 9px; letter-spacing: 2px; }
+  /* ── Masthead — scale with screen width ── */
+  .masthead { padding: 10px 14px 8px; }
+  .masthead-logo a {
+    font-size: clamp(28px, 9vw, 52px);
+    letter-spacing: 1px;
+    line-height: 1;
+  }
+  .masthead-logo .tagline { font-size: 9px; letter-spacing: 2px; margin-top: 4px; }
   .masthead-icon { display: none; }
   .masthead-social { display: none; }
 
-  /* ── Nav ── */
+  /* ── Nav — horizontal scroll, no wrap ── */
   .nav-bar nav {
-    gap: 18px;
-    padding: 9px 14px;
+    gap: 20px;
+    padding: 8px 14px;
     justify-content: flex-start;
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
@@ -1136,11 +1140,11 @@ footer nav a:hover { color: #fff; }
   /* ── Mobile feed — lead story ── */
   .mf-lead { border-bottom: 2px solid #000; }
   .mf-lead a { display: block; text-decoration: none; color: inherit; }
-  .mf-lead img { width: 100%; height: 220px; object-fit: cover; display: block; }
-  .mf-lead-body { padding: 16px 14px 20px; }
+  .mf-lead img { width: 100%; height: 210px; object-fit: cover; display: block; }
+  .mf-lead-body { padding: 14px 14px 18px; }
   .mf-lead-body h2 {
     font-family: 'Barlow Condensed', sans-serif;
-    font-size: 28px;
+    font-size: 26px;
     font-weight: 900;
     line-height: 1.1;
     margin: 8px 0 10px;
@@ -1148,7 +1152,7 @@ footer nav a:hover { color: #fff; }
     color: #000;
   }
 
-  /* ── Divider label ── */
+  /* ── Divider ── */
   .mf-divider {
     background: #000;
     color: #f8f5f0;
@@ -1157,34 +1161,44 @@ footer nav a:hover { color: #fff; }
     font-weight: 700;
     letter-spacing: 2.5px;
     text-transform: uppercase;
-    padding: 8px 14px;
+    padding: 7px 14px;
   }
 
   /* ── Article list items ── */
   .mf-item {
     display: grid;
-    grid-template-columns: 110px 1fr;
+    grid-template-columns: 100px 1fr;
     gap: 12px;
-    padding: 14px;
+    padding: 12px 14px;
     border-bottom: 1px solid #ddd;
     text-decoration: none;
     color: inherit;
     background: #f8f5f0;
   }
-  .mf-item:active { background: #f0ede8; }
-  .mf-item img { width: 110px; height: 80px; object-fit: cover; display: block; flex-shrink: 0; }
-  .mf-item-body { display: flex; flex-direction: column; justify-content: center; min-width: 0; }
+  .mf-item img {
+    width: 100px;
+    height: 72px;
+    object-fit: cover;
+    display: block;
+    flex-shrink: 0;
+  }
+  .mf-item-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-width: 0;
+  }
   .mf-item-body h3 {
     font-family: 'Barlow Condensed', sans-serif;
-    font-size: 17px;
+    font-size: 16px;
     font-weight: 900;
     line-height: 1.15;
-    margin: 4px 0 6px;
+    margin: 3px 0 5px;
     text-transform: uppercase;
     color: #000;
   }
   .mf-cat {
-    font-size: 10px;
+    font-size: 9px;
     font-weight: 800;
     letter-spacing: 1.5px;
     text-transform: uppercase;
@@ -1194,41 +1208,38 @@ footer nav a:hover { color: #fff; }
   .mf-date {
     font-size: 10px;
     font-weight: 600;
-    letter-spacing: 0.5px;
-    opacity: 0.5;
+    letter-spacing: 0.3px;
+    opacity: 0.45;
     display: block;
   }
 
-  /* ── Article pages on mobile ── */
+  /* ── Article pages ── */
   .article-page-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr !important;
     padding: 0 14px;
     gap: 0;
   }
-  .article-ad-rail { display: none; }
-  .article-wrap { padding: 20px 0 40px; max-width: 100%; }
+  .article-ad-rail { display: none !important; }
+  .article-wrap { padding: 20px 0 36px; max-width: 100%; }
   .article-headline { font-size: 30px; line-height: 1.05; }
   .article-sub { font-size: 15px; }
   .article-hero-img { height: 210px; }
   .article-body p { font-size: 15px; line-height: 1.7; margin-bottom: 18px; }
-  .article-body h3 { font-size: 21px; }
+  .article-body h3 { font-size: 22px; }
   .article-body blockquote { font-size: 16px; padding-left: 14px; }
-  .article-byline { flex-wrap: wrap; }
-  .byline-date { width: 100%; margin-left: 0; margin-top: 4px; }
+  .article-byline { flex-wrap: wrap; gap: 8px; }
+  .byline-date { width: 100%; margin-left: 0; }
   .article-related { padding: 0 14px 32px; }
-  .article-related h4 { font-size: 36px; }
+  .article-related h4 { font-size: 32px; }
   .article-related .card-grid,
-  .article-related .card-grid-3 {
-    display: block !important;
-  }
+  .article-related .card-grid-3 { display: block !important; }
   .article-related .card { margin-bottom: 1px; }
-  .article-related .card-img { height: 160px; }
+  .article-related .card-img { height: 150px; }
+  .article-breadcrumb { display: none; }
 
   /* ── Footer ── */
-  footer { padding: 32px 14px 24px; margin-top: 0; }
-  .footer-logo { font-size: 40px; }
+  footer { padding: 28px 14px 20px; margin-top: 0; }
+  .footer-logo { font-size: 38px; }
   footer nav a { margin: 0 8px; font-size: 11px; }
-
-  /* ── Back to top ── */
   .back-top { bottom: 14px; right: 14px; width: 36px; height: 36px; font-size: 15px; }
 }
