@@ -18,6 +18,7 @@
     }
   ],
   "redirects": [
-    { "source": "/home", "destination": "/", "permanent": true }
+    { "source": "/home", "destination": "/", "permanent": true },
+    { "source": "/editorial-calendar", "destination": "/", "permanent": true }
   ]
 }
