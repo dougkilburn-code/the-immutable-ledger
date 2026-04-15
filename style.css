@@ -1067,212 +1067,168 @@ footer nav a:hover { color: #fff; }
   line-height: 1.6;
 }
 
+
 /* ═══════════════════════════════════════════════
-   RESPONSIVE — TABLET & MOBILE
+   MOBILE FEED — desktop: hidden
    ═══════════════════════════════════════════════ */
+#mobile-feed { display: none; }
 
-/* ─── TABLET (≤ 900px) ─── */
-@media (max-width: 900px) {
+/* ═══════════════════════════════════════════════
+   RESPONSIVE — MOBILE (≤ 720px)
+   Desktop layout is untouched above this point.
+   On mobile we hide all complex desktop panels
+   and show a simple article feed instead.
+   ═══════════════════════════════════════════════ */
+@media (max-width: 720px) {
 
-  /* Masthead */
-  .masthead { padding: 14px 16px 10px; }
-  .masthead-logo a { font-size: 64px; }
+  /* ── Show mobile feed, hide desktop layout ── */
+  #mobile-feed { display: block; }
+
+  .home-grid,
+  .section-wrap,
+  .ad-leaderboard-wrap,
+  .ad-sponsor-billboard,
+  .featured-2col,
+  .conference-feature,
+  .world-grid,
+  .donate-strip,
+  .ad-prefooter,
+  .section-rule {
+    display: none !important;
+  }
+
+  /* Also hide the section id anchor divs that wrap card grids */
+  #payments, #technology, #agentic, #crypto,
+  #regulation, #consumer, #people, #conferences, #global {
+    display: none !important;
+  }
+
+  /* ── Top bar ── */
+  .top-bar { padding: 7px 14px; }
+  .top-bar-date { display: none; }
+  .top-bar-icons { font-size: 16px; gap: 10px; }
+  .subscribe-btn { padding: 4px 10px; font-size: 10px; letter-spacing: 1px; }
+  .donate-btn { padding: 4px 10px; font-size: 10px; margin-left: 4px; }
+
+  /* ── Breaking ticker ── */
+  .breaking-bar { padding: 7px 0; font-size: 11px; }
+  .breaking-label { padding: 0 12px; font-size: 10px; }
+
+  /* ── Masthead ── */
+  .masthead { padding: 12px 14px 8px; }
+  .masthead-logo a { font-size: 48px; letter-spacing: 1px; }
+  .masthead-logo .tagline { font-size: 9px; letter-spacing: 2px; }
   .masthead-icon { display: none; }
   .masthead-social { display: none; }
 
-  /* Top bar */
-  .top-bar { padding: 7px 16px; }
-  .top-bar-date { display: none; }
-
-  /* Nav — horizontal scroll instead of overflow */
+  /* ── Nav ── */
   .nav-bar nav {
-    gap: 22px;
-    padding: 10px 16px;
+    gap: 18px;
+    padding: 9px 14px;
     justify-content: flex-start;
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
     scrollbar-width: none;
   }
   .nav-bar nav::-webkit-scrollbar { display: none; }
+  .nav-bar nav a { font-size: 11px; letter-spacing: 1.5px; white-space: nowrap; }
 
-  /* Home grid — stack to single column */
-  .home-grid {
-    grid-template-columns: 1fr;
+  /* ── Mobile feed — lead story ── */
+  .mf-lead { border-bottom: 2px solid #000; }
+  .mf-lead a { display: block; text-decoration: none; color: inherit; }
+  .mf-lead img { width: 100%; height: 220px; object-fit: cover; display: block; }
+  .mf-lead-body { padding: 16px 14px 20px; }
+  .mf-lead-body h2 {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 28px;
+    font-weight: 900;
+    line-height: 1.1;
+    margin: 8px 0 10px;
+    text-transform: uppercase;
+    color: #000;
   }
-  .sidebar-left {
-    border-right: none;
-    border-bottom: 1px solid #ccc;
-    padding: 16px;
+
+  /* ── Divider label ── */
+  .mf-divider {
+    background: #000;
+    color: #f8f5f0;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    padding: 8px 14px;
   }
-  .hero-article {
-    border-right: none;
-    border-bottom: 1px solid #ccc;
-    padding: 16px;
+
+  /* ── Article list items ── */
+  .mf-item {
+    display: grid;
+    grid-template-columns: 110px 1fr;
+    gap: 12px;
+    padding: 14px;
+    border-bottom: 1px solid #ddd;
+    text-decoration: none;
+    color: inherit;
+    background: #f8f5f0;
   }
-  .hero-img { height: 240px; }
-  .hero-article h2 { font-size: 34px; }
-  .sidebar-right { padding: 16px; }
-
-  /* Section titles */
-  .section-title { font-size: 68px; }
-  .section-title-sm { font-size: 56px; }
-  .section-header { padding: 28px 16px 0; }
-
-  /* Card grids — 2 columns on tablet */
-  .card-grid { grid-template-columns: repeat(2, 1fr); }
-  .card-grid-3 { grid-template-columns: repeat(2, 1fr); }
-
-  /* Featured 2-col — stack */
-  .featured-2col { grid-template-columns: 1fr; }
-  .feat-img { height: 280px; }
-  .feat-text { padding: 28px 24px; }
-  .feat-text h2 { font-size: 36px; }
-
-  /* Conference full-width */
-  .conference-feature .conf-img { height: 320px; }
-  .conf-overlay { padding: 30px 24px 24px; }
-  .conf-overlay h2 { font-size: 34px; }
-  .conf-overlay p { font-size: 14px; }
-
-  /* World / Most Read */
-  .world-grid { grid-template-columns: 1fr; }
-  .world-articles { border-right: none; padding-right: 0; padding: 0 16px; }
-  .world-article {
-    grid-template-columns: 180px 1fr;
-    gap: 16px;
+  .mf-item:active { background: #f0ede8; }
+  .mf-item img { width: 110px; height: 80px; object-fit: cover; display: block; flex-shrink: 0; }
+  .mf-item-body { display: flex; flex-direction: column; justify-content: center; min-width: 0; }
+  .mf-item-body h3 {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 17px;
+    font-weight: 900;
+    line-height: 1.15;
+    margin: 4px 0 6px;
+    text-transform: uppercase;
+    color: #000;
   }
-  .world-article img { width: 180px; height: 150px; }
-  .world-art-text h3 { font-size: 24px; }
-  .most-read { padding-left: 0; padding: 0 16px; border-top: 2px solid #000; margin-top: 24px; }
+  .mf-cat {
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: #c0392b;
+    display: block;
+  }
+  .mf-date {
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    opacity: 0.5;
+    display: block;
+  }
 
-  /* Article page — ad rail hidden on tablet */
+  /* ── Article pages on mobile ── */
   .article-page-grid {
     grid-template-columns: 1fr;
-    padding: 0 16px;
+    padding: 0 14px;
     gap: 0;
   }
   .article-ad-rail { display: none; }
-
-  /* Article */
-  .article-wrap { padding: 24px 16px 40px; }
-  .article-headline { font-size: 42px; }
-  .article-hero-img { height: 300px; }
-  .article-sub { font-size: 17px; }
-  .article-body blockquote { font-size: 18px; padding-left: 18px; }
-
-  /* People grid — 2 columns */
-  .people-grid { grid-template-columns: repeat(2, 1fr); }
-  .people-hero h1 { font-size: 60px; }
-
-  /* Sponsor billboard — already handled above, reinforce */
-  .ad-sponsor-billboard-inner {
-    grid-template-columns: 1fr;
-    text-align: center;
-  }
-  .ad-sponsor-logo-box { margin: 0 auto; }
-
-  /* Footer */
-  .footer-logo { font-size: 48px; }
-  footer { padding: 36px 16px 24px; }
-}
-
-/* ─── MOBILE (≤ 600px) ─── */
-@media (max-width: 600px) {
-
-  /* Masthead */
-  .masthead { padding: 10px 12px 8px; }
-  .masthead-logo a { font-size: 46px; letter-spacing: 1px; }
-  .masthead-logo .tagline { font-size: 9px; letter-spacing: 2px; }
-
-  /* Top bar */
-  .top-bar { padding: 6px 12px; }
-  .top-bar-icons { gap: 10px; font-size: 16px; }
-  .subscribe-btn { padding: 4px 10px; font-size: 10px; letter-spacing: 1px; }
-  .donate-btn { padding: 4px 10px; font-size: 10px; margin-left: 6px; }
-
-  /* Nav */
-  .nav-bar nav { gap: 16px; padding: 8px 12px; }
-  .nav-bar nav a { font-size: 11px; letter-spacing: 1.5px; }
-
-  /* Hero */
-  .hero-img { height: 200px; }
-  .hero-article h2 { font-size: 28px; }
-  .hero-article p { font-size: 14px; }
-
-  /* Section titles */
-  .section-title { font-size: 48px; }
-  .section-title-sm { font-size: 40px; }
-  .section-header { padding: 20px 12px 0; }
-  .go-deeper { display: none; }
-
-  /* Card grids — single column */
-  .card-grid { grid-template-columns: 1fr; }
-  .card-grid-3 { grid-template-columns: 1fr; }
-  .card-img { height: 180px; }
-
-  /* Featured */
-  .feat-img { height: 220px; }
-  .feat-text { padding: 20px 16px; }
-  .feat-text h2 { font-size: 30px; }
-  .feat-text p { font-size: 14px; }
-
-  /* Conference */
-  .conference-feature .conf-img { height: 240px; }
-  .conf-overlay { padding: 20px 16px 16px; }
-  .conf-overlay h2 { font-size: 26px; }
-  .conf-overlay p { display: none; }
-
-  /* World articles — stack image above text */
-  .world-article {
-    grid-template-columns: 1fr;
-  }
-  .world-article img { width: 100%; height: 200px; }
-  .world-art-text h3 { font-size: 22px; }
-  .world-articles { padding: 0 12px; }
-  .most-read { padding: 0 12px; }
-
-  /* Sidebar articles */
-  .sidebar-left, .sidebar-right { padding: 12px; }
-  .sidebar-article h3 { font-size: 16px; }
-
-  /* Article page */
-  .article-wrap { padding: 16px 12px 32px; }
-  .article-headline { font-size: 32px; line-height: 1.05; }
+  .article-wrap { padding: 20px 0 40px; max-width: 100%; }
+  .article-headline { font-size: 30px; line-height: 1.05; }
   .article-sub { font-size: 15px; }
-  .article-hero-img { height: 220px; }
-  .article-body p { font-size: 15px; line-height: 1.7; }
-  .article-body h3 { font-size: 22px; }
+  .article-hero-img { height: 210px; }
+  .article-body p { font-size: 15px; line-height: 1.7; margin-bottom: 18px; }
+  .article-body h3 { font-size: 21px; }
   .article-body blockquote { font-size: 16px; padding-left: 14px; }
-  .byline-date { display: none; }
-  .article-page-grid { padding: 0 12px; }
-
-  /* Related cards */
-  .article-related { padding: 0 12px 32px; }
+  .article-byline { flex-wrap: wrap; }
+  .byline-date { width: 100%; margin-left: 0; margin-top: 4px; }
+  .article-related { padding: 0 14px 32px; }
   .article-related h4 { font-size: 36px; }
+  .article-related .card-grid,
+  .article-related .card-grid-3 {
+    display: block !important;
+  }
+  .article-related .card { margin-bottom: 1px; }
+  .article-related .card-img { height: 160px; }
 
-  /* People grid — single column */
-  .people-grid { grid-template-columns: 1fr; }
-  .people-hero h1 { font-size: 48px; }
-  .person-img { height: 200px; }
-
-  /* Sponsor billboard */
-  .ad-sponsor-billboard { padding: 24px 12px; }
-  .ad-sponsor-copy h3 { font-size: 20px; }
-  .ad-sponsor-logo-box { width: 140px; height: 60px; }
-
-  /* Donate strip */
-  .donate-strip { padding: 32px 12px; }
-  .donate-strip h2 { font-size: 28px; }
-  .donate-strip-btns { flex-direction: column; align-items: center; gap: 10px; }
-  .btn-donate-primary, .btn-donate-secondary { width: 100%; max-width: 280px; text-align: center; }
-
-  /* Footer */
-  .footer-logo { font-size: 38px; }
+  /* ── Footer ── */
+  footer { padding: 32px 14px 24px; margin-top: 0; }
+  .footer-logo { font-size: 40px; }
   footer nav a { margin: 0 8px; font-size: 11px; }
 
-  /* Back to top */
-  .back-top { bottom: 16px; right: 16px; width: 36px; height: 36px; font-size: 15px; }
-
-  /* Leaderboard ad — hide on mobile (AdSense will manage its own) */
-  .ad-leaderboard-wrap { display: none; }
+  /* ── Back to top ── */
+  .back-top { bottom: 14px; right: 14px; width: 36px; height: 36px; font-size: 15px; }
 }
