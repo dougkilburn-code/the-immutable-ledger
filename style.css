@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,400;1,700&family=Barlow+Condensed:wght@400;600;700;800;900&family=Barlow:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,400;1,700&family=Barlow+Condensed:wght@400;600;700;800;900&family=Lora:ital,wght@0,400;0,600;1,400;1,600&display=swap');
 
 /* ═══════════════════════════════════════════════════════════════
    RESET & BASE
@@ -12,7 +12,7 @@
 body {
   background: #ffffff;
   color: #111111;
-  font-family: 'Barlow', 'Georgia', serif;
+  font-family: 'Lora', Georgia, serif;
   font-size: 16px;
   line-height: 1.5;
 }
@@ -389,12 +389,11 @@ img {
 }
 
 .story-md h3 {
-  font-family: 'Barlow Condensed', sans-serif;
-  font-size: 24px;
-  font-weight: 900;
-  line-height: 1.1;
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.2;
   margin-bottom: 8px;
-  text-transform: uppercase;
   color: #111;
 }
 
@@ -433,12 +432,11 @@ img {
 }
 
 .story-sm h4 {
-  font-family: 'Barlow Condensed', sans-serif;
-  font-size: 19px;
-  font-weight: 900;
-  line-height: 1.15;
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.2;
   margin-bottom: 6px;
-  text-transform: uppercase;
   color: #111;
 }
 
@@ -490,11 +488,10 @@ img {
 }
 
 .story-thumb h4 {
-  font-family: 'Barlow Condensed', sans-serif;
-  font-size: 15px;
-  font-weight: 900;
-  line-height: 1.18;
-  text-transform: uppercase;
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.22;
   color: #111;
   margin-bottom: 4px;
 }
@@ -621,11 +618,10 @@ img {
 }
 
 .sg-card h3 {
-  font-family: 'Barlow Condensed', sans-serif;
-  font-size: 21px;
-  font-weight: 900;
-  line-height: 1.1;
-  text-transform: uppercase;
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 1.2;
   color: #111;
   margin-bottom: 8px;
 }
@@ -1249,11 +1245,10 @@ img {
 }
 
 .related-card h3 {
-  font-family: 'Barlow Condensed', sans-serif;
-  font-size: 18px;
-  font-weight: 900;
-  text-transform: uppercase;
-  line-height: 1.15;
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.25;
   color: #111;
   margin-bottom: 6px;
 }
@@ -1319,10 +1314,10 @@ img {
 }
 
 .person-name {
-  font-family: 'Barlow Condensed', sans-serif;
-  font-size: 22px;
-  font-weight: 900;
-  line-height: 1.1;
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.15;
   margin-bottom: 3px;
 }
 
@@ -1565,11 +1560,10 @@ footer nav a:hover {
 }
 
 .mobile-card h3 {
-  font-family: 'Barlow Condensed', sans-serif;
+  font-family: 'Playfair Display', Georgia, serif;
   font-size: 15px;
-  font-weight: 900;
-  line-height: 1.15;
-  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 1.2;
   color: #111;
 }
 
