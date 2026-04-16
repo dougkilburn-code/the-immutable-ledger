@@ -56,6 +56,7 @@ img { width: 100%; display: block; object-fit: cover; }
   letter-spacing: 3px;
   display: block;
   color: #000;
+  word-break: break-word;
 }
 .masthead-logo .tagline {
   font-size: 10px;
@@ -262,21 +263,7 @@ img { width: 100%; display: block; object-fit: cover; }
 .feat-text p { font-size: 15px; line-height: 1.65; margin-bottom: 16px; color: #111; }
 .feat-meta { font-size: 12px; font-weight: 600; margin-bottom: 18px; opacity: 0.65; }
 
-/* ─── BREAKING / TICKER ─── */
-.breaking-bar {
-  background: #000;
-  color: #f8f5f0;
-  padding: 8px 24px;
-  font-size: 12px;
-  font-weight: 700;
-  letter-spacing: 1px;
-  display: flex;
-  gap: 24px;
-  overflow: hidden;
-  max-width: 100%;
-}
-.breaking-label { color: #ff3b30; text-transform: uppercase; white-space: nowrap; }
-.breaking-text { opacity: 0.85; }
+/* ─── BREAKING / TICKER — canonical definition below in ANIMATED TICKER ─── */
 
 /* ─── CONFERENCE FULL-WIDTH ─── */
 .conference-feature {
@@ -1268,4 +1255,17 @@ footer nav a:hover { color: #fff; }
   /* ── Footer nav: hide desktop section links, show simple mobile nav ── */
   .footer-nav-desktop { display: none; }
   .footer-nav-mobile { display: block; }
+
+  /* ── Mobile nav scroll fade cue ── */
+  .nav-bar {
+    position: relative;
+  }
+  .nav-bar::after {
+    content: '';
+    position: absolute;
+    top: 0; right: 0; bottom: 0;
+    width: 32px;
+    background: linear-gradient(to right, transparent, #f8f5f0);
+    pointer-events: none;
+  }
 }
