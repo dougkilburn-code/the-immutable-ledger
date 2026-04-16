@@ -267,13 +267,24 @@ img {
    HOME HERO GRID (3-col, desktop only)
    ═══════════════════════════════════════════════════════════════ */
 .home-grid {
-  display: grid;
+  display: grid !important;
   grid-template-columns: 1fr 2fr 1fr;
   max-width: 1260px;
   margin: 0 auto;
   padding: 0 24px;
   border-top: 3px solid #111;
   border-bottom: 1px solid #e0dbd4;
+  background: #fff;
+  position: relative;
+  z-index: 1;
+}
+
+.hg-left,
+.hg-center,
+.hg-right {
+  background: #fff;
+  min-height: 200px;
+  position: relative;
 }
 
 .hg-left {
@@ -588,6 +599,8 @@ img {
 .sg-card {
   background: #fff;
   padding: 18px;
+  position: relative;
+  z-index: 1;
 }
 
 .sg-card img {
