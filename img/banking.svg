@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 480" width="820" height="480">
+  <rect width="820" height="480" fill="#f5f0e8"/>
+
+  <!-- Sky gradient suggestion -->
+  <rect width="820" height="260" fill="#e8e2d8"/>
+
+  <!-- Classical bank building -->
+  <!-- Pediment (triangle top) -->
+  <polygon points="200,120 410,40 620,120" fill="#d4c9b0" stroke="#b8ad98" stroke-width="2"/>
+  <!-- Entablature (horizontal beam) -->
+  <rect x="195" y="118" width="430" height="30" fill="#c8bda4"/>
+  <rect x="195" y="118" width="430" height="4" fill="#b8ad98"/>
+
+  <!-- Columns (6 columns) -->
+  <rect x="215" y="148" width="30" height="200" fill="#d4c9b0"/>
+  <rect x="215" y="148" width="30" height="4" fill="#b8ad98"/>
+  <rect x="215" y="344" width="30" height="4" fill="#b8ad98"/>
+
+  <rect x="280" y="148" width="30" height="200" fill="#d4c9b0"/>
+  <rect x="280" y="148" width="30" height="4" fill="#b8ad98"/>
+  <rect x="280" y="344" width="30" height="4" fill="#b8ad98"/>
+
+  <rect x="345" y="148" width="30" height="200" fill="#d4c9b0"/>
+  <rect x="345" y="148" width="30" height="4" fill="#b8ad98"/>
+  <rect x="345" y="344" width="30" height="4" fill="#b8ad98"/>
+
+  <rect x="445" y="148" width="30" height="200" fill="#d4c9b0"/>
+  <rect x="445" y="148" width="30" height="4" fill="#b8ad98"/>
+  <rect x="445" y="344" width="30" height="4" fill="#b8ad98"/>
+
+  <rect x="510" y="148" width="30" height="200" fill="#d4c9b0"/>
+  <rect x="510" y="148" width="30" height="4" fill="#b8ad98"/>
+  <rect x="510" y="344" width="30" height="4" fill="#b8ad98"/>
+
+  <rect x="575" y="148" width="30" height="200" fill="#d4c9b0"/>
+  <rect x="575" y="148" width="30" height="4" fill="#b8ad98"/>
+  <rect x="575" y="344" width="30" height="4" fill="#b8ad98"/>
+
+  <!-- Stylobate (base steps) -->
+  <rect x="185" y="346" width="450" height="18" fill="#c0b598"/>
+  <rect x="175" y="362" width="470" height="18" fill="#b8ad90"/>
+  <rect x="165" y="378" width="490" height="22" fill="#b0a888"/>
+
+  <!-- Building body -->
+  <rect x="215" y="148" width="390" height="198" fill="#ece7dc"/>
+
+  <!-- Large entrance door -->
+  <rect x="372" y="258" width="76" height="90" fill="#272727" rx="2"/>
+  <rect x="373" y="259" width="74" height="88" fill="#1a1a1a" rx="2"/>
+  <!-- Door arch -->
+  <ellipse cx="410" cy="258" rx="38" ry="20" fill="#1a1a1a"/>
+  <!-- Door handle -->
+  <rect x="407" y="295" width="6" height="20" fill="#c8b88a" rx="2"/>
+  <!-- Door fanlight -->
+  <ellipse cx="410" cy="258" rx="30" ry="14" fill="#2a2a2a"/>
+  <line x1="410" y1="244" x2="410" y2="272" stroke="#c8b88a" stroke-width="1" opacity="0.5"/>
+  <line x1="380" y1="258" x2="440" y2="258" stroke="#c8b88a" stroke-width="1" opacity="0.5"/>
+
+  <!-- Windows -->
+  <rect x="240" y="190" width="50" height="70" fill="#9ab5c8" opacity="0.5" rx="1"/>
+  <rect x="240" y="190" width="50" height="70" fill="none" stroke="#b8ad98" stroke-width="2" rx="1"/>
+  <line x1="265" y1="190" x2="265" y2="260" stroke="#b8ad98" stroke-width="1"/>
+  <line x1="240" y1="225" x2="290" y2="225" stroke="#b8ad98" stroke-width="1"/>
+
+  <rect x="530" y="190" width="50" height="70" fill="#9ab5c8" opacity="0.5" rx="1"/>
+  <rect x="530" y="190" width="50" height="70" fill="none" stroke="#b8ad98" stroke-width="2" rx="1"/>
+  <line x1="555" y1="190" x2="555" y2="260" stroke="#b8ad98" stroke-width="1"/>
+  <line x1="530" y1="225" x2="580" y2="225" stroke="#b8ad98" stroke-width="1"/>
+
+  <!-- Ground / street -->
+  <rect x="0" y="400" width="820" height="80" fill="#d4c9b0"/>
+  <rect x="0" y="399" width="820" height="3" fill="#b8ad98"/>
+
+  <!-- Payment terminal on a small plinth — modern irony -->
+  <rect x="620" y="310" width="120" height="88" fill="#272727" rx="4"/>
+  <rect x="628" y="318" width="104" height="62" fill="#1a1a1a" rx="2"/>
+  <!-- Screen glow -->
+  <rect x="632" y="322" width="96" height="54" fill="#3a6e8a" opacity="0.6" rx="1"/>
+  <!-- Contactless symbol on screen -->
+  <path d="M672,349 Q680,342 672,335" fill="none" stroke="#f5f0e8" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M678,354 Q690,341 678,328" fill="none" stroke="#f5f0e8" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M684,359 Q700,341 684,323" fill="none" stroke="#f5f0e8" stroke-width="2.5" stroke-linecap="round"/>
+  <circle cx="666" cy="342" r="3" fill="#f5f0e8"/>
+  <!-- Terminal keypad -->
+  <rect x="628" y="386" width="104" height="12" fill="#1e1e1e" rx="1"/>
+  <!-- Label -->
+  <rect x="620" y="370" width="120" height="28" fill="#1e1e1e" rx="0 0 4 4"/>
+
+  <!-- Plinth -->
+  <rect x="610" y="398" width="140" height="10" fill="#b0a888"/>
+
+  <!-- Pigeons on steps -->
+  <ellipse cx="320" cy="398" rx="8" ry="5" fill="#9a9488"/>
+  <ellipse cx="316" cy="394" rx="5" ry="5" fill="#9a9488"/>
+  <ellipse cx="490" cy="396" rx="8" ry="5" fill="#9a9488"/>
+  <ellipse cx="486" cy="392" rx="5" ry="5" fill="#9a9488"/>
+
+  <!-- Caption bar -->
+  <rect x="0" y="432" width="820" height="48" fill="#272727" opacity="0.88"/>
+  <text x="410" y="461" font-family="Georgia, serif" font-size="13" fill="#f5f0e8" opacity="0.85" text-anchor="middle" font-style="italic">Payment innovation arrives at the institution. The institution is pleased.</text>
+</svg>

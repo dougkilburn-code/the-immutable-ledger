@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 480" width="820" height="480">
+  <rect width="820" height="480" fill="#f5f0e8"/>
+
+  <!-- Boardroom table -->
+  <ellipse cx="410" cy="370" rx="380" ry="60" fill="#c8bda4"/>
+  <ellipse cx="410" cy="360" rx="380" ry="60" fill="#d4c9b0"/>
+  <rect x="30" y="360" width="760" height="30" fill="#d4c9b0"/>
+  <ellipse cx="410" cy="390" rx="380" ry="30" fill="#c0b598"/>
+
+  <!-- Human silhouettes seated around table (dim, background) -->
+  <ellipse cx="120" cy="330" rx="24" ry="24" fill="#9a9488" opacity="0.5"/>
+  <rect x="100" y="352" width="40" height="40" fill="#8a8880" opacity="0.5" rx="3"/>
+  <ellipse cx="230" cy="328" rx="24" ry="24" fill="#9a9488" opacity="0.5"/>
+  <rect x="210" y="350" width="40" height="40" fill="#8a8880" opacity="0.5" rx="3"/>
+  <ellipse cx="590" cy="328" rx="24" ry="24" fill="#9a9488" opacity="0.5"/>
+  <rect x="570" y="350" width="40" height="40" fill="#8a8880" opacity="0.5" rx="3"/>
+  <ellipse cx="700" cy="330" rx="24" ry="24" fill="#9a9488" opacity="0.5"/>
+  <rect x="680" y="352" width="40" height="40" fill="#8a8880" opacity="0.5" rx="3"/>
+
+  <!-- Robot — centre of attention at head of table -->
+  <!-- Robot body -->
+  <rect x="345" y="220" width="130" height="120" fill="#272727" rx="8"/>
+  <rect x="353" y="228" width="114" height="104" fill="#1e1e1e" rx="6"/>
+  <!-- Body panel lines -->
+  <line x1="353" y1="270" x2="467" y2="270" stroke="#3a3a3a" stroke-width="1.5"/>
+  <line x1="353" y1="300" x2="467" y2="300" stroke="#3a3a3a" stroke-width="1.5"/>
+  <!-- Chest indicator light -->
+  <circle cx="410" cy="255" r="8" fill="#00cc44" opacity="0.9"/>
+  <circle cx="410" cy="255" r="5" fill="#00ff55"/>
+  <!-- Logo on chest -->
+  <text x="410" y="293" font-family="monospace" font-size="9" fill="#4a6a8a" text-anchor="middle">AI v84.0</text>
+  <text x="410" y="310" font-family="monospace" font-size="8" fill="#2a4a6a" text-anchor="middle">GOVERNANCE</text>
+
+  <!-- Robot arms -->
+  <rect x="295" y="230" width="52" height="18" fill="#272727" rx="4"/>
+  <rect x="473" y="230" width="52" height="18" fill="#272727" rx="4"/>
+  <!-- Hands on table -->
+  <rect x="280" y="244" width="28" height="14" fill="#272727" rx="3"/>
+  <rect x="512" y="244" width="28" height="14" fill="#272727" rx="3"/>
+  <!-- Fingers -->
+  <rect x="280" y="258" width="6" height="10" fill="#272727" rx="2"/>
+  <rect x="289" y="258" width="6" height="10" fill="#272727" rx="2"/>
+  <rect x="298" y="258" width="6" height="10" fill="#272727" rx="2"/>
+  <rect x="512" y="258" width="6" height="10" fill="#272727" rx="2"/>
+  <rect x="521" y="258" width="6" height="10" fill="#272727" rx="2"/>
+  <rect x="530" y="258" width="6" height="10" fill="#272727" rx="2"/>
+
+  <!-- Robot neck -->
+  <rect x="392" y="200" width="36" height="22" fill="#272727" rx="3"/>
+
+  <!-- Robot head -->
+  <rect x="340" y="100" width="140" height="104" fill="#272727" rx="12"/>
+  <rect x="348" y="108" width="124" height="88" fill="#1a1a1a" rx="10"/>
+
+  <!-- Eyes (screens) -->
+  <rect x="360" y="120" width="40" height="30" fill="#1e3a5a" rx="3"/>
+  <rect x="420" y="120" width="40" height="30" fill="#1e3a5a" rx="3"/>
+  <!-- Eye glow -->
+  <rect x="362" y="122" width="36" height="26" fill="#2a5a8a" opacity="0.7" rx="2"/>
+  <rect x="422" y="122" width="36" height="26" fill="#2a5a8a" opacity="0.7" rx="2"/>
+  <!-- Pupil dots -->
+  <circle cx="380" cy="135" r="7" fill="#4a9adc"/>
+  <circle cx="440" cy="135" r="7" fill="#4a9adc"/>
+  <circle cx="382" cy="133" r="2" fill="#ffffff" opacity="0.8"/>
+  <circle cx="442" cy="133" r="2" fill="#ffffff" opacity="0.8"/>
+
+  <!-- Mouth / speaker grille -->
+  <rect x="368" y="168" width="84" height="16" fill="#0d0d0d" rx="3"/>
+  <line x1="374" y1="174" x2="374" y2="180" stroke="#3a3a3a" stroke-width="1.5"/>
+  <line x1="382" y1="172" x2="382" y2="182" stroke="#3a3a3a" stroke-width="1.5"/>
+  <line x1="390" y1="170" x2="390" y2="184" stroke="#3a3a3a" stroke-width="1.5"/>
+  <line x1="398" y1="170" x2="398" y2="184" stroke="#4a8a44" stroke-width="1.5"/>
+  <line x1="406" y1="172" x2="406" y2="182" stroke="#4a8a44" stroke-width="1.5"/>
+  <line x1="414" y1="170" x2="414" y2="184" stroke="#4a8a44" stroke-width="1.5"/>
+  <line x1="422" y1="172" x2="422" y2="182" stroke="#3a3a3a" stroke-width="1.5"/>
+  <line x1="430" y1="174" x2="430" y2="180" stroke="#3a3a3a" stroke-width="1.5"/>
+  <line x1="438" y1="172" x2="438" y2="182" stroke="#3a3a3a" stroke-width="1.5"/>
+  <line x1="446" y1="174" x2="446" y2="180" stroke="#3a3a3a" stroke-width="1.5"/>
+
+  <!-- Antenna -->
+  <line x1="410" y1="100" x2="410" y2="68" stroke="#272727" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="410" cy="62" r="8" fill="#272727"/>
+  <circle cx="410" cy="62" r="5" fill="#ff3322" opacity="0.9"/>
+
+  <!-- Tie / business attire suggestion -->
+  <polygon points="405,220 415,220 411,250 409,250" fill="#4a4a6a"/>
+  <polygon points="407,220 413,220 413,225 407,225" fill="#3a3a5a"/>
+
+  <!-- Speech bubble from robot -->
+  <rect x="490" y="80" width="270" height="110" fill="#ffffff" rx="8" stroke="#272727" stroke-width="2"/>
+  <polygon points="490,130 468,140 490,148" fill="#ffffff" stroke="#272727" stroke-width="2"/>
+  <polygon points="492,131 490,130 490,148" fill="#ffffff"/>
+  <text x="625" y="115" font-family="Georgia, serif" font-size="13" fill="#272727" text-anchor="middle">"As I was saying before</text>
+  <text x="625" y="133" font-family="Georgia, serif" font-size="13" fill="#272727" text-anchor="middle">the governance framework</text>
+  <text x="625" y="151" font-family="Georgia, serif" font-size="13" fill="#272727" text-anchor="middle">was updated mid-sentence—"</text>
+  <text x="625" y="172" font-family="Georgia, serif" font-size="10" fill="#888" text-anchor="middle" font-style="italic">— AI v83.9, seconds before deprecation</text>
+
+  <!-- Name placard at table -->
+  <rect x="372" y="348" width="76" height="20" fill="#f5f0e8" stroke="#b8ad98" stroke-width="1" rx="1"/>
+  <text x="410" y="362" font-family="Georgia, serif" font-size="9" fill="#272727" text-anchor="middle">AI REPRESENTATIVE</text>
+
+  <!-- Caption bar -->
+  <rect x="0" y="432" width="820" height="48" fill="#272727" opacity="0.88"/>
+  <text x="410" y="461" font-family="Georgia, serif" font-size="13" fill="#f5f0e8" opacity="0.85" text-anchor="middle" font-style="italic">The governance committee. Attendance: 4 humans, 1 AI, 1 AI watching the AI.</text>
+</svg>

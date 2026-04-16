@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 480" width="820" height="480">
+  <rect width="820" height="480" fill="#1a1a1a"/>
+
+  <!-- Stage floor -->
+  <ellipse cx="410" cy="420" rx="380" ry="40" fill="#2a2a2a"/>
+  <rect x="30" y="390" width="760" height="50" fill="#1e1e1e"/>
+
+  <!-- Stage edge highlight -->
+  <rect x="30" y="388" width="760" height="4" fill="#3a3226"/>
+
+  <!-- Back curtain / backdrop -->
+  <rect x="80" y="60" width="660" height="340" fill="#111111"/>
+  <rect x="80" y="60" width="660" height="6" fill="#2e2a22"/>
+
+  <!-- Spotlight cone from upper left -->
+  <polygon points="180,0 350,390 80,390" fill="#f5f0e8" opacity="0.04"/>
+  <polygon points="200,0 360,390 120,390" fill="#f5f0e8" opacity="0.04"/>
+  <!-- Spotlight pool on stage -->
+  <ellipse cx="240" cy="388" rx="100" ry="14" fill="#f5f0e8" opacity="0.08"/>
+
+  <!-- Spotlight cone from upper right (second chair) -->
+  <polygon points="640,0 490,390 740,390" fill="#f5f0e8" opacity="0.04"/>
+  <ellipse cx="580" cy="388" rx="100" ry="14" fill="#f5f0e8" opacity="0.07"/>
+
+  <!-- ─── LEFT CHAIR (occupied) ─── -->
+  <!-- Chair legs -->
+  <rect x="175" y="310" width="8" height="70" fill="#5a4a35" rx="2"/>
+  <rect x="253" y="310" width="8" height="70" fill="#5a4a35" rx="2"/>
+  <!-- Cross bar -->
+  <rect x="175" y="350" width="86" height="6" fill="#4a3a28" rx="2"/>
+  <!-- Seat -->
+  <rect x="168" y="290" width="100" height="24" fill="#8a7558" rx="3"/>
+  <!-- Chair back -->
+  <rect x="172" y="200" width="12" height="95" fill="#5a4a35" rx="2"/>
+  <rect x="252" y="200" width="12" height="95" fill="#5a4a35" rx="2"/>
+  <rect x="170" y="200" width="96" height="70" fill="#8a7558" rx="4"/>
+  <!-- Armrests -->
+  <rect x="162" y="270" width="20" height="10" fill="#6a5540" rx="2"/>
+  <rect x="254" y="270" width="20" height="10" fill="#6a5540" rx="2"/>
+  <!-- Person silhouette (seated, leaning forward, engaged) -->
+  <ellipse cx="216" cy="190" rx="26" ry="28" fill="#f5f0e8" opacity="0.9"/>
+  <!-- Body -->
+  <rect x="193" y="215" width="46" height="70" fill="#272727" rx="4"/>
+  <!-- Suit lapels -->
+  <polygon points="216,218 204,240 216,235" fill="#1a1a1a"/>
+  <polygon points="216,218 228,240 216,235" fill="#1a1a1a"/>
+  <!-- Arms on armrests -->
+  <rect x="168" y="265" width="30" height="12" fill="#272727" rx="4"/>
+  <rect x="246" y="265" width="30" height="12" fill="#272727" rx="4"/>
+  <!-- Legs -->
+  <rect x="198" y="282" width="16" height="30" fill="#1e1e1e" rx="3"/>
+  <rect x="222" y="282" width="16" height="30" fill="#1e1e1e" rx="3"/>
+  <!-- Shoes -->
+  <ellipse cx="206" cy="312" rx="12" ry="5" fill="#111" />
+  <ellipse cx="230" cy="312" rx="12" ry="5" fill="#111"/>
+  <!-- Mic in hand gesture -->
+  <rect x="235" y="232" width="5" height="20" fill="#c8b88a"/>
+  <ellipse cx="237" cy="230" rx="6" ry="8" fill="#c8b88a"/>
+
+  <!-- ─── RIGHT CHAIR (the sleeping exec) ─── -->
+  <!-- Chair legs -->
+  <rect x="515" y="310" width="8" height="70" fill="#5a4a35" rx="2"/>
+  <rect x="593" y="310" width="8" height="70" fill="#5a4a35" rx="2"/>
+  <!-- Cross bar -->
+  <rect x="515" y="350" width="86" height="6" fill="#4a3a28" rx="2"/>
+  <!-- Seat -->
+  <rect x="508" y="290" width="100" height="24" fill="#8a7558" rx="3"/>
+  <!-- Chair back -->
+  <rect x="512" y="200" width="12" height="95" fill="#5a4a35" rx="2"/>
+  <rect x="592" y="200" width="12" height="95" fill="#5a4a35" rx="2"/>
+  <rect x="510" y="200" width="96" height="70" fill="#8a7558" rx="4"/>
+  <!-- Armrests -->
+  <rect x="502" y="270" width="20" height="10" fill="#6a5540" rx="2"/>
+  <rect x="594" y="270" width="20" height="10" fill="#6a5540" rx="2"/>
+  <!-- Person silhouette (sleeping — head dropped forward) -->
+  <ellipse cx="556" cy="215" rx="26" ry="28" fill="#f5f0e8" opacity="0.9"/>
+  <!-- Head drooped down -->
+  <ellipse cx="556" cy="238" rx="22" ry="20" fill="#f5f0e8" opacity="0.9"/>
+  <!-- Body -->
+  <rect x="533" y="252" width="46" height="40" fill="#272727" rx="4"/>
+  <!-- ZZZ sleep indicators -->
+  <text x="598" y="210" font-family="Georgia, serif" font-size="22" fill="#f5f0e8" opacity="0.6" font-style="italic">z</text>
+  <text x="616" y="192" font-family="Georgia, serif" font-size="28" fill="#f5f0e8" opacity="0.5" font-style="italic">z</text>
+  <text x="638" y="170" font-family="Georgia, serif" font-size="34" fill="#f5f0e8" opacity="0.4" font-style="italic">z</text>
+
+  <!-- Small table between chairs -->
+  <rect x="345" y="270" width="130" height="12" fill="#5a4a35" rx="2"/>
+  <rect x="388" y="280" width="10" height="100" fill="#4a3a28" rx="2"/>
+  <rect x="418" y="280" width="10" height="100" fill="#4a3a28" rx="2"/>
+  <!-- Water glasses on table -->
+  <rect x="360" y="248" width="14" height="24" fill="#b8d4e8" opacity="0.4" rx="2"/>
+  <rect x="442" y="248" width="14" height="24" fill="#b8d4e8" opacity="0.4" rx="2"/>
+
+  <!-- Audience silhouettes (front row) -->
+  <ellipse cx="130" cy="450" rx="22" ry="18" fill="#272727"/>
+  <ellipse cx="190" cy="455" rx="22" ry="18" fill="#272727"/>
+  <ellipse cx="250" cy="452" rx="22" ry="18" fill="#272727"/>
+  <ellipse cx="310" cy="456" rx="22" ry="18" fill="#272727"/>
+  <ellipse cx="370" cy="453" rx="22" ry="18" fill="#272727"/>
+  <ellipse cx="430" cy="457" rx="22" ry="18" fill="#272727"/>
+  <ellipse cx="490" cy="452" rx="22" ry="18" fill="#272727"/>
+  <ellipse cx="550" cy="455" rx="22" ry="18" fill="#272727"/>
+  <ellipse cx="610" cy="453" rx="22" ry="18" fill="#272727"/>
+  <ellipse cx="670" cy="456" rx="22" ry="18" fill="#272727"/>
+
+  <!-- Caption bar -->
+  <rect x="0" y="432" width="820" height="48" fill="#272727" opacity="0.85"/>
+  <text x="410" y="461" font-family="Georgia, serif" font-size="13" fill="#f5f0e8" opacity="0.8" text-anchor="middle" font-style="italic">The panel on infrastructure sequencing. Front row. 10.57am.</text>
+</svg>
